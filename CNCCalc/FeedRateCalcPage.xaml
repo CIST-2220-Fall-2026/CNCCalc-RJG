@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CNCCalc.FeedRateCalcPage"
+             Title="FeedRateCalcPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Spindle Speed in RPM" />
+        <Entry x:Name="spindleSpeedEntry" Placeholder="RPM"  />
+        <Label Text="Chip Load in inches per tooth" />
+        <Entry x:Name="chipLoadEntry" Placeholder="inches per tooth"  />
+        <Label Text="Number of Flutes" />
+        <Entry x:Name="flutesEntry" Placeholder="Number of Flutes"  />
+        
+        <Button x:Name="submitButton" Text="Submit" Clicked="submitButton_Clicked" />
+        
+        <Label x:Name="resultLabel" Text="Please enter values and click Submit." />
+    </VerticalStackLayout>
+</ContentPage>

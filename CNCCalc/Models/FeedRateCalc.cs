@@ -68,7 +68,7 @@ namespace CNCCalc.Models
         /// </summary>
         public float FeedRate { get; private set; } 
 
-        public void CalculateFeedRate()
+        private void CalculateFeedRate()
         {
             FeedRate = (spindleSpeed * chipLoad * numberOfFlutes) / 12;
         }
